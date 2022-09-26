@@ -1,0 +1,28 @@
+/* the input has been added to this sintax in the bottom */ 
+
+
+function AddAndRemoveElements(command){
+    let arr = [];
+    let num = 1;
+    for (let i = 0; i < command.length; i++) {
+        if (command[i] == 'add') {
+            arr.push(num);
+        } else {
+            arr.pop();
+        }
+        num++;
+    }
+    if (arr.length == 0) {
+        console.log('Empty');
+    } else {
+        console.log(arr.join('\n'));
+    }
+
+}
+AddAndRemoveElements(['add',
+
+'add',
+
+'add',
+
+'add']);
